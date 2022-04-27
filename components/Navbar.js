@@ -12,7 +12,7 @@ const NavBar = () => {
         }}
       >
         <Link href="/">
-          <a className="navbar-brand">Joaquin ruarte</a>
+          <a className="navbar-brand">RJ</a>
         </Link>
         <div className="navbar-collapse" id="navbarNav">
           <ul
