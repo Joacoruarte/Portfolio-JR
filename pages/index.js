@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
-import { proyects } from "../profile"; 
+import { proyects } from "../profile";
 
 const Index = () => (
   <Layout>
@@ -21,14 +21,14 @@ const Index = () => (
               <h1>Joaquin ruarte</h1>
               <h3>Full Stack Developer</h3>
               <p>
-                Soy un desarrollador apasionado por el mundo del desarrollo y
-                la capacidad de resolver problemas , siempre teniendo en cuenta
-                que lo que se este desarrollando sea escalable y sostenible.
+                Soy una persona apasionada por el mundo de la programación, con
+                orientacion Back-End , me gusta mucho poder crear soluciones y
+                resolver problemas , siempre estoy dispuesto a aprender mas , ya
+                que soy un desarrollador que le gusta enseñar y aprender de los
+                demás.
               </p>
-              <Link href="/contact"> 
-                <a className="btn btn-outline-light">
-                  Contratame
-                </a>
+              <Link href="/contact">
+                <a className="btn btn-outline-light">Contratame</a>
               </Link>
             </div>
           </div>
@@ -95,9 +95,13 @@ const Index = () => (
             {proyects.map(({ name, description, image, url }, i) => (
               <div className="col-md-4 p-2" key={i}>
                 <div className="card h-100">
-                  <Link href={url}> 
-                    <div className="overflow"> 
-                      <img src={`/${image}`} alt={`${name}`} className="card-img-top" />
+                  <Link href={url}>
+                    <div className="overflow">
+                      <img
+                        src={`/${image}`}
+                        alt={`${name}`}
+                        className="card-img-top"
+                      />
                     </div>
                   </Link>
                   <div className="card-body">

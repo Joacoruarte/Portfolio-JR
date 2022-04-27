@@ -4,6 +4,8 @@ import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios"
 import { useState } from "react";
+
+
 const Contact = () => {
     const [form, setForm] = useState({ 
         email: "", 
@@ -12,11 +14,8 @@ const Contact = () => {
 
     const handleOnSumbit = (e) => { 
         e.preventDefault()
-        if(form.email && form.menssage){ 
-            axios.post("http://localhost:3000/api/hello" , form)
-        }else{
-            alert("debes rellenar todos los campos")
-        }
+        console.log(form)
+        axios.post("https://portfolio-mail-rj.herokuapp.com/sendMail" , form)
     }
     const handleOnChange = (e) => { 
         setForm({ 
@@ -63,7 +62,7 @@ const Contact = () => {
           </div>
           <form onSubmit={handleOnSumbit}>
             <div className="mb-3">
-              <label for="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputEmail1" className="form-label">
                 Email address
               </label>
               <input
@@ -72,6 +71,7 @@ const Contact = () => {
                 value={form.email}
                 name="email"
                 onChange={handleOnChange}
+                placeholder="Email..."
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -80,16 +80,18 @@ const Contact = () => {
               </div>
             </div>
             <div className="mb-3">
-              <label for="exampleInputPassword1" className="form-label">
+              <label htmlFor="exampleInputPassword1" className="form-label">
                 Menssage
               </label>
-              <input
+              <textarea
                 type="text"
                 className="col-md-4 offset-md-4 form-control text-center" 
                 value={form.menssage}
+                placeholder="Escribe tu mensaje..."
                 name="menssage"
                 onChange={handleOnChange}
                 id="exampleInputPassword1"
+                style={{minHeight: "7rem"}}
               />
             </div>
             <div className="mb-3 form-check">
