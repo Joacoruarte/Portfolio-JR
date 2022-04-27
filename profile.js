@@ -86,7 +86,7 @@ export const proyects = [
   {
     name: "Mode Parfum E-commerce",
     description: "Tienda de perfumería online , Donde nos podemos registar , consultar detalles de productos , agregar a favoritos , agregar al carrito y realizar una compra",
-    image: "Mode-Parfum.jpeg",
+    image: "Mode-Parfum.png",
     url: "https://client-rho-plum.vercel.app/"
   },
   {
