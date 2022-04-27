@@ -25,7 +25,7 @@ const Layout = ({ children , footer = true , dark = false }) => {
   
 
   return ( 
-    <div className={dark ? "bg-dark" : ""}>
+    <div id="back" className={dark ? "bg-dark" : ""}>
     <NavBar />
     <main className="container py-5">
         {children}

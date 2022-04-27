@@ -8,14 +8,13 @@ const Github = ({user , statusCode}) =>  {
   }
 
   return (
-  <Layout dark={true}>
+  <Layout dark={false}>
     <div className="row"> 
       <div className="col-md-4 offset-md-4"> 
         <div className="card card-body text-center">
           <h1>{user.name}</h1> 
           <img src={user.avatar_url} alt={user.login} /> 
           <p>{user.bio}</p> 
-          <a href={user.blog} target="_blank" className="btn btn-outline-secondary my-2">Linkedin</a>
           <a href={user.html_url} target="_blank" className="btn btn-outline-secondary my-2">Go to github</a>
         </div>
       </div>

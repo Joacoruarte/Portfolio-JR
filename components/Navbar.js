@@ -29,6 +29,11 @@ const NavBar = () => (
               <a className="nav-link">Github</a>
             </Link>
           </li>
+          <li className="nav-item">
+            <Link href="/contact">
+              <a className="nav-link">Contact</a>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

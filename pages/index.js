@@ -21,13 +21,15 @@ const Index = () => (
               <h1>Joaquin ruarte</h1>
               <h3>Full Stack Developer</h3>
               <p>
-                Soy un desarrollador apasanionado por el mundo del desarrollo y
+                Soy un desarrollador apasionado por el mundo del desarrollo y
                 la capacidad de resolver problemas , siempre teniendo en cuenta
-                que lo que se este desarrollando sea escalable en el tiempo
+                que lo que se este desarrollando sea escalable y sostenible.
               </p>
-              <a href="https://www.linkedin.com/in/joaquinruartejs/">
-                Contratame
-              </a>
+              <Link href="/contact"> 
+                <a className="btn btn-outline-light">
+                  Contratame
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -36,30 +38,10 @@ const Index = () => (
 
     {/** Second Section*/}
     <div className="row py-2">
-      <div className="col-md-4">
-        <div className="card bg-light">
-          <div className="card-body">
-            <h1>Skills</h1>
-            {skills.map((skills, i) => (
-              <div className="py-3" key={i}>
-                <h5 style={{ fontWeight: "400" }}>{skills.skill}</h5>
-                <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: `${skills.percentange}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="col-md-8">
+      <div className="col-md-12">
         <div className="card bg-light h-100">
           <div className="card-body">
             <h1>Experiencia</h1>
-
             <ul>
               <li>
                 <h3>[Academic] Full Stack Development E-Commerce</h3>
@@ -126,11 +108,11 @@ const Index = () => (
             ))}
           </div>
 
-          <div className="text-center mt-4"> 
+          {/* <div className="text-center mt-4"> 
               <Link href={"/projects"}>
                 <a className="btn btn-outline-light">More projects</a>
               </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
