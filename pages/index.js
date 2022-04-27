@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
-import { skills, proyects } from "../profile"; 
+import { proyects } from "../profile"; 
 
 const Index = () => (
   <Layout>

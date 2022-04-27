@@ -8,7 +8,7 @@ const Github = ({user , statusCode}) =>  {
   }
 
   return (
-  <Layout dark={false}>
+  <Layout dark={false} footer={false}>
     <div className="row"> 
       <div className="col-md-4 offset-md-4"> 
         <div className="card card-body text-center">
