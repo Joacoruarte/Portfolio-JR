@@ -12,7 +12,7 @@ const Index = () => (
             <div className="col-md-4">
               <img
                 alt="Joaquin foto"
-                src="Myproject.jpeg"
+                src="Joaquin.jpg"
                 className="img-fluid"
                 style={{ height: "16rem" }}
               />
