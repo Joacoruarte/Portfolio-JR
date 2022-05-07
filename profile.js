@@ -40,7 +40,7 @@ export const skills = [
     image: "sass.png"
   },
   {
-    skill: "Nodejs",
+    skill: "Node.Js",
     percentange: 100,
     image: "nodejs.png"
   },
@@ -74,6 +74,16 @@ export const skills = [
     percentange: 100,
     image: "figma.png"
   },
+  {
+    skill: "Next.Js",
+    percentange: 100,
+    image: "next-js.svg"
+  },
+  {
+    skill: "MySQL",
+    percentange: 100,
+    image: "mysql.png"
+  },
 ];
 
 export const proyects = [
@@ -88,6 +98,12 @@ export const proyects = [
     description: "Tienda de perfumería online , Donde nos podemos registar , consultar detalles de productos , agregar a favoritos , agregar al carrito y realizar una compra",
     image: "Mode-Parfum.png",
     url: "https://mode-parfum.vercel.app/"
+  },
+  {
+    name: "Netflix Clone",
+    description: "Clon de Netflix realizado con Next utilizando TypeScript Tailwind CSS, proximamente firebase para el registro de usuarios...",
+    image: "Netflix.png",
+    url: "https://netflix-clone-liard-sigma.vercel.app/"
   },
   {
     name: "Portfolio",

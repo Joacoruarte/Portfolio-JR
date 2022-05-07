@@ -19,6 +19,10 @@ const Skills = () => (
             <h5>{skills[1].skill}</h5>
           </div> 
           <div className="col"> 
+            <img src={`/${skills[15].image}`} alt={skills[15].skill} style={{height: "75px" , width: "75px"}}/>
+            <h5>{skills[15].skill}</h5>
+          </div> 
+          <div className="col"> 
             <img src={`/${skills[2].image}`} alt={skills[2].skill} style={{height: "75px" , width: "75px"}}/>
             <h5>{skills[2].skill}</h5>
           </div> 
@@ -62,6 +66,14 @@ const Skills = () => (
           <div className="col"> 
             <img src={`/${skills[11].image}`} alt={skills[11].skill} style={{height: "75px" , width: "75px"}}/>
             <h5>{skills[11].skill}</h5>
+          </div> 
+          <div className="col"> 
+            <img src={`/${skills[16].image}`} alt={skills[16].skill} style={{height: "75px" , width: "75px"}}/>
+            <h5>{skills[16].skill}</h5>
+          </div> 
+          <div className="col"> 
+            <img src={`/${skills[15].image}`} alt={skills[15].skill} style={{height: "75px" , width: "75px"}}/>
+            <h5>{skills[15].skill}</h5>
           </div> 
         </div>
       </div>
